@@ -1,0 +1,11 @@
+#page1 {
+    -skrollr-animation-name: paged1;
+}
+@-skrollr-keyframes paged1 {
+    0 {
+        top: 0%;
+    }
+    1600 {
+        top: -300%;
+    }
+}

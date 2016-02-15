@@ -1,0 +1,87 @@
+body {
+    font-family: "Raleway", Tahoma, Geneva, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    background-color: #4ba3bd;
+    color: #F2F2F2;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 30em;
+    width: 95vw;
+}
+
+.content {
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    max-width: 30em;
+    width: 95vw;
+}
+
+.page {
+    position: absolute;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+
+.scene {
+    position: absolute;
+    height: 100vh;
+    width: 300vh;
+    left: 50%;
+    margin-left: -150vh;
+}
+
+.hull {
+    fill: #5F3A19;
+}
+.bob {
+    fill: #F9E821;
+}
+.mast {
+    fill: #5F3A19;
+}
+.sail {
+    fill: #FAF5B3;
+}
+
+#views {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+#wave1 {
+    fill: #c53b45;
+}
+#wave2 {
+    fill: #cb505d;
+}
+#wave3 {
+    fill: #00697c;
+}
+#wave4 {
+    fill: #59b3b0;
+}
+#wave5 {
+    fill: #51a9b9;
+}
+#wave6 {
+    fill: #4ba3bd;
+}
+#wave7 {
+    fill: #459dc1;
+}
+#wave8 {
+    fill: #3f98c6;
+}
