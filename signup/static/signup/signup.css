@@ -68,6 +68,10 @@ select {
     color: #EF5350;
 }
 
+.view {
+    width: 100vw;
+}
+
 .content {
     position: absolute;
     margin-top: 22vh;
@@ -81,9 +85,7 @@ select {
 }
 
 @media (max-width: 80em) {
-    page {
-        font-size: 4rem;
-    }
+    
 }
 
 #id_special {
