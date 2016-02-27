@@ -76,7 +76,6 @@ select {
     margin-right: auto;
     left: 0;
     right: 0;
-    height: 60vh;
     max-width: 30em;
     width: 90vw;
 }
@@ -85,37 +84,6 @@ select {
     page {
         font-size: 4rem;
     }
-}
-
-.page {
-    position: absolute;
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100%;
-}
-
-.scene {
-    position: absolute;
-    height: 100vh;
-    width: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-#views {
-    box-sizing: border-box;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    padding: 1em;
-}
-
-#wave-s {
-    fill: #00697c;
-}
-#sky-s {
-    fill: #4ba3bd;
 }
 
 #id_special {
@@ -133,7 +101,4 @@ select {
     height: auto;
     display: block;
     margin: 1em auto;
-}
-#page1 {
-    position: fixed;
 }
