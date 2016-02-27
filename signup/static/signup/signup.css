@@ -18,6 +18,31 @@ input {
     background: transparent;
 }
 
+input[type="file"] {
+    border: 0;
+}
+
+input[type="submit"] {
+    margin: 1.5em 0;
+    background-color:#4DB6AC;
+    border:.1em solid #4DB6AC;
+    border-radius:.4em;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:1.1em;
+    font-weight:700;
+    height:3em;
+    letter-spacing:.1em;
+    line-height:3em;
+    padding:0 2em;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    white-space:nowrap;
+    width: 12em;
+}
+
 textarea {
     display: block;
     width: 95%;
@@ -38,21 +63,28 @@ select {
     display: block;
 }
 
-.errorlist {
+.errors {
     font-size: 1em;
     color: #EF5350;
 }
 
 .content {
     position: absolute;
-    margin-top: 35vh;
+    margin-top: 22vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     height: 60vh;
     max-width: 30em;
-    width: 95vw;
+    width: 90vw;
+}
+
+@media (max-width: 80em) {
+    page {
+        font-size: 4rem;
+    }
 }
 
 .page {
@@ -65,24 +97,43 @@ select {
 .scene {
     position: absolute;
     height: 100vh;
-    width: 300vh;
+    width: 110%;
     left: 50%;
-    margin-left: -150vh;
+    transform: translateX(-50%);
 }
 
 
 #views {
     box-sizing: border-box;
-    height: 100%;
     margin: 0;
-    min-height: 100vh;
-    position: fixed;
+    position: absolute;
     width: 100%;
+    padding: 1em;
 }
 
 #wave-s {
     fill: #00697c;
 }
 #sky-s {
-    fill: #cb505d;
+    fill: #4ba3bd;
+}
+
+#id_special {
+    display: inline;
+    width: 1.1em;
+    vertical-align: text-bottom;
+}
+
+#proof {
+    display: none;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+#page1 {
+    position: fixed;
 }

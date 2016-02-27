@@ -9,61 +9,223 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link rel="icon" type="image/png" href="favicon.png">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
-<body>
-    <div id="nav">
-    
-    </div>
-    
+<body> 
     <div id="views">
+        <!--
         <div class="page" id="page1">
-            <svg class="scene" id="scene1">
-                <rect x="-507.6" id="sky-s" width="2933.3" height="413.1"/>
-                <path id="wave-s" d="M2395.1,254.9c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2V266l0,0v-33.4c0,0-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2V266h0v-33.4c0,0-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2
-                    c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2
-                    s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2s-7.7,22.4-30.6,22.2c-24-0.2-30.6-22.2-30.6-22.2V266v814h2933.3V266v-33.4
-                    C2425.6,232.6,2417.9,255.1,2395.1,254.9z"/>
+            <svg class="scene" id="scene1" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+                <rect id="sky-s" width="1920" height="559"/>
+                <path id="wave-s" d="M1920,208.1c-19.9-3.1-25.6-23.1-25.6-23.1s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5v35.2h0V185c0,0-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5
+                s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5c-24-0.2-30.6-23.5-30.6-23.5s-7.7,23.7-30.6,23.5
+                C6.6,208.3,0,185,0,185v35.2V1080h1920L1920,208.1z"/>
                 </svg>
-            <div class="content" id="content1">
-                <h2>台大資管營</h2>
-                <form action="/signup/" enctype="multipart/form-data" method="post">
-                {% csrf_token %}
-                {% for field in form %}
-                    <div class="fieldWrapper">
-                        <p>{{ field.label_tag }}</p>
-                        {{ field.errors }}
-                        {% if field.help_text %}
-                            <p class="help">{{ field.help_text|safe }}</p>
-                        {% endif %}
-                        <p>{{ field }}</p>
-                    </div>
-                {% endfor %}
-                    <input type="submit" value="ok" />
-                </form>
-            </div>
+            
+        </div>
+-->
+        <div class="content" id="content1">
+            <img class="logo" src="/static/logo.png" />
+            <h2>台大資管營</h2>
+            <form action="/signup/" enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="fieldWrapper">
+                    <p>{{ form.name.label_tag }} <span class="errors">{{ form.name.errors.as_text }} </span></p>
+                    {% if form.name.help_text %}
+                        <p class="help">{{ form.name.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.name }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.gender.label_tag }} <span class="errors">{{ form.gender.errors.as_text }} </span></p>
+                    {% if form.gender.help_text %}
+                        <p class="help">{{ form.gender.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.gender }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.birthday.label_tag }} <span class="errors">{{ form.birthday.errors.as_text }} </span></p>
+                    {% if form.birthday.help_text %}
+                        <p class="help">{{ form.birthday.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.birthday }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.ssn.label_tag }} <span class="errors">{{ form.ssn.errors.as_text }} </span></p>
+                    {% if form.ssn.help_text %}
+                        <p class="help">{{ form.ssn.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.ssn }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.phone.label_tag }} <span class="errors">{{ form.phone.errors.as_text }} </span></p>
+                    {% if form.phone.help_text %}
+                        <p class="help">{{ form.phone.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.phone }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.email.label_tag }} <span class="errors">{{ form.email.errors.as_text }} </span></p>
+                    {% if form.email.help_text %}
+                        <p class="help">{{ form.email.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.email }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.address.label_tag }} <span class="errors">{{ form.address.errors.as_text }} </span></p>
+                    {% if form.address.help_text %}
+                        <p class="help">{{ form.address.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.address }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.contact.label_tag }} <span class="errors">{{ form.contact.errors.as_text }} </span></p>
+                    {% if form.contact.help_text %}
+                        <p class="help">{{ form.contact.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.contact }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.contact_phone.label_tag }} <span class="errors">{{ form.contact_phone.errors.as_text }} </span></p>
+                    {% if form.contact_phone.help_text %}
+                        <p class="help">{{ form.contact_phone.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.contact_phone }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.blood.label_tag }} <span class="errors">{{ form.blood.errors.as_text }} </span></p>
+                    {% if form.blood.help_text %}
+                        <p class="help">{{ form.blood.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.blood }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.food.label_tag }} <span class="errors">{{ form.food.errors.as_text }} </span></p>
+                    {% if form.food.help_text %}
+                        <p class="help">{{ form.food.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.food }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.allergy.label_tag }} <span class="errors">{{ form.allergy.errors.as_text }} </span></p>
+                    {% if form.allergy.help_text %}
+                        <p class="help">{{ form.allergy.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.allergy }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.medical.label_tag }} <span class="errors">{{ form.medical.errors.as_text }} </span></p>
+                    {% if form.medical.help_text %}
+                        <p class="help">{{ form.medical.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.medical }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.size.label_tag }} <span class="errors">{{ form.size.errors.as_text }} </span></p>
+                    {% if form.size.help_text %}
+                        <p class="help">{{ form.size.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.size }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.school.label_tag }} <span class="errors">{{ form.school.errors.as_text }} </span></p>
+                    {% if form.school.help_text %}
+                        <p class="help">{{ form.school.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.school }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.grade.label_tag }} <span class="errors">{{ form.grade.errors.as_text }} </span></p>
+                    {% if form.grade.help_text %}
+                        <p class="help">{{ form.grade.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.grade }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.mugshot.label_tag }} <span class="errors">{{ form.mugshot.errors.as_text }} </span></p>
+                    {% if form.mugshot.help_text %}
+                        <p class="help">{{ form.mugshot.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.mugshot }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.lifeshot.label_tag }} <span class="errors">{{ form.lifeshot.errors.as_text }} </span></p>
+                    {% if form.lifeshot.help_text %}
+                        <p class="help">{{ form.lifeshot.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.lifeshot }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.interests.label_tag }} <span class="errors">{{ form.interests.errors.as_text }} </span></p>
+                    {% if form.interests.help_text %}
+                        <p class="help">{{ form.interests.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.interests }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.experiences.label_tag }} <span class="errors">{{ form.experiences.errors.as_text }} </span></p>
+                    {% if form.experiences.help_text %}
+                        <p class="help">{{ form.experiences.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.experiences }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.motivations.label_tag }} <span class="errors">{{ form.motivations.errors.as_text }} </span></p>
+                    {% if form.motivations.help_text %}
+                        <p class="help">{{ form.motivations.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.motivations }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.how.label_tag }} <span class="errors">{{ form.how.errors.as_text }} </span></p>
+                    {% if form.how.help_text %}
+                        <p class="help">{{ form.how.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.how }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.group.label_tag }} <span class="errors">{{ form.group.errors.as_text }} </span></p>
+                    {% if form.group.help_text %}
+                        <p class="help">{{ form.group.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.group }}</p><p></p>
+                </div>
+                <div class="fieldWrapper">
+                    <br />
+                    <p>{{ form.special.label_tag }} {{ form.special }} <span class="errors">{{ form.special.errors.as_text }} </span></p>
+                    {% if form.special.help_text %}
+                        <p class="help">{{ form.special.help_text|safe }}</p>
+                    {% endif %}
+                    <p></p>
+                </div>
+                <div class="fieldWrapper" id="proof">
+                    <p>{{ form.proof.label_tag }} <span class="errors">{{ form.proof.errors.as_text }} </span></p>
+                    {% if form.proof.help_text %}
+                        <p class="help">{{ form.proof.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.proof }}</p><p></p>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LdrgBgTAAAAAKLxOGFaGWMrEUtqbEwq2r3eoig6" data-callback="enableBtn"></div>
+                <input id="button1" type="hidden" value="ok" />
+            </form>
         </div>
     </div>
     
     <script src="/static/dist/skrollr.stylesheets.min.js"></script>
     <script src="/static/dist/skrollr.min.js"></script>
-    <script>
+    <script>  
         var s = skrollr.init();
         $(document).ready(function() {
             $("#id_birthday").datepicker({
@@ -71,6 +233,16 @@
                 defaultDate: "1999-09-01"
             });
         });
+        document.getElementById('id_special').onclick = function() {
+            if(this.checked == true){
+                document.getElementById('proof').style.display = 'block';
+            }else{
+                document.getElementById('proof').style.display = 'none';
+            }
+        };
+        function enableBtn() {
+            document.getElementById('button1').setAttribute('type', 'submit')
+        }
     </script>
 </body>
 </html>

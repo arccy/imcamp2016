@@ -23,8 +23,8 @@ class SignUp(models.Model):
     contact_phone = models.CharField(max_length = 10)
     blood = models.CharField(choices = bloods, max_length = 10)
     food = models.CharField(choices = foods, max_length = 10)
-    allergy = models.CharField(max_length = 100)
-    medical = models.CharField(max_length = 100)
+    allergy = models.CharField(max_length = 100, blank = True)
+    medical = models.CharField(max_length = 100, blank = True)
     size = models.CharField(choices = sizes, max_length = 10)
     school = models.CharField(max_length = 20)
     grade = models.CharField(choices = grades, max_length = 10)
@@ -34,9 +34,9 @@ class SignUp(models.Model):
     experiences = models.TextField(max_length = 1000)
     motivations = models.TextField(max_length = 1000)
     how = models.CharField(choices = hows, max_length = 100)
-    group = models.TextField(max_length = 1000)
-    poor = models.TextField(max_length = 1000)
-    proof = models.FileField(upload_to='uploads/proof/')
+    group = models.TextField(max_length = 100, blank = True)
+    special = models.BooleanField(blank = True)
+    proof = models.FileField(upload_to='uploads/proof/', blank = True)
     
 class SignUpForm(ModelForm):
     class Meta:
@@ -66,7 +66,7 @@ class SignUpForm(ModelForm):
             'motivations': ('報名動機及期待收穫'),
             'how': ('你從何處得知臺大資管營'),
             'group': ('申請三人團報優惠'),
-            'poor': ('申請家境清寒報名費減免'),
+            'special': ('申請家境清寒報名費減免'),
             'proof': ('相關證明文件'),
         }
         help_texts = {
@@ -93,7 +93,7 @@ class SignUpForm(ModelForm):
             'motivations': (''),
             'how': (''),
             'group': (''),
-            'poor': (''),
+            'special': (''),
             'proof': (''),
         }
         widgets = {

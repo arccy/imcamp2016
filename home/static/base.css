@@ -16,9 +16,19 @@ p {
     font-weight: 200;
 }
 
+@media (max-width: 80rem) {
+    .content {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 7rem;
+    }
+}
+
 .content {
     position: absolute;
-    margin-top: 35vh;
+    margin-top: 32vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -38,9 +48,9 @@ p {
 .scene {
     position: absolute;
     height: 100vh;
-    width: 300vh;
+    width: 110%;
     left: 50%;
-    margin-left: -150vh;
+    transform: translateX(-50%);
 }
 
 
@@ -57,9 +67,16 @@ p {
     fill: #00697c;
 }
 #sky-s {
-    fill: #cb505d;
+    fill: #4ba3bd;
 }
 
-#dolphin {
-    transform: translate(300px);
+.logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+#content9 {
+    text-align: center;
 }

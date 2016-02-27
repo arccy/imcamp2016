@@ -1,6 +1,6 @@
 body {
     font-family: "Raleway", Tahoma, Geneva, sans-serif;
-    font-size: 1em;
+    font-size: 2rem;
     margin: 0;
     background-color: #4ba3bd;
     color: #F2F2F2;
@@ -12,9 +12,44 @@ img {
     width: 95vw;
 }
 
+h2 {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 80rem) {
+    .content {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 8rem;
+    }
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
 .content {
     position: absolute;
-    margin-top: 35vh;
+    margin-top: 32vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -34,9 +69,9 @@ img {
 .scene {
     position: absolute;
     height: 100vh;
-    width: 300vh;
+    width: 110%;
     left: 50%;
-    margin-left: -150vh;
+    transform: translateX(-50%);
 }
 
 .hull {
@@ -68,20 +103,30 @@ img {
     fill: #cb505d;
 }
 #wave3 {
-    fill: #00697c;
+    fill: #6BBEFC;
 }
 #wave4 {
-    fill: #59b3b0;
+    fill: #2BAAF7;
 }
 #wave5 {
-    fill: #51a9b9;
+    fill: #0093DD;
 }
 #wave6 {
-    fill: #4ba3bd;
+    fill: #0076A5;
 }
 #wave7 {
-    fill: #459dc1;
+    fill: #005B77;
 }
 #wave8 {
-    fill: #3f98c6;
+    fill: #104D5B;
+}
+
+#content1, #content0, #content8 {
+    text-align: center;
+}
+
+@media (max-width: 80rem) {
+    .fb-container {
+        transform: scale(1.5) translateY(20%);
+    }
 }
