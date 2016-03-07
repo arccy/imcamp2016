@@ -49,6 +49,11 @@ h2 {
     width: 95vw;
 }
 
+.content p {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
 .page {
     position: absolute;
     box-sizing: border-box;
