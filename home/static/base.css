@@ -16,15 +16,6 @@ p {
     font-weight: 200;
 }
 
-@media (max-width: 80rem) {
-    .content {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 7rem;
-    }
-}
-
 .content {
     position: absolute;
     margin-top: 32vh;

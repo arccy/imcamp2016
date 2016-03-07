@@ -1,6 +1,6 @@
 body {
     font-family: "Raleway", Tahoma, Geneva, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
     background-color: #4ba3bd;
     color: #F2F2F2;
@@ -28,15 +28,6 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-@media (max-width: 80rem) {
-    .content {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 4rem;
-    }
 }
 
 .logo {
@@ -124,8 +115,3 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 80rem) {
-    .fb-container {
-        transform: scale(1.5) translateY(20%);
-    }
-}
