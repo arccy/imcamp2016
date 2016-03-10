@@ -18,9 +18,9 @@ from django.contrib import admin
 from home import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^signup/', include('signup.urls')),
-    url(r'^', include('home.urls')),
+    url(r'^camp/2016/admin/', admin.site.urls),
+    url(r'^camp/2016/signup/', include('signup.urls')),
+    url(r'^camp/2016/', include('home.urls')),
 ]
 
 handler404 = 'home.views.error404'
