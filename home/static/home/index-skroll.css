@@ -170,6 +170,8 @@
     8400 {
         top: -10%;
     }
+}
+
     /*
     9000 {
         top: -20%;
@@ -178,7 +180,6 @@
         top: -20%;
     }
     */
-}
 
 #page8 {
     -skrollr-animation-name: paged8;
@@ -193,6 +194,8 @@
     8600 {
         top: 0%;
     }
+}
+
     /*
     9000 {
         top: -10%;
@@ -201,8 +204,7 @@
         top: -10%;
     }
     */
-    
-}
+
 /*
 #page8 {
     -skrollr-animation-name: paged8;
