@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'signup', include('signup.urls')),
     url(r'^/signup/', include('signup.urls')),
     url(r'^/', include('home.urls')),
-#    url(r'', include('home.urls')),
+    url(r'', include('home.urls')),
 ]
 
 handler404 = 'home.views.error404'
