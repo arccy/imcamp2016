@@ -19,4 +19,4 @@ def sign(request):
     return render(request, 'signup/signup.html', {'form': form})
 
 def thanks(request):
-    return render(request, '/camp/2016/signup/thanks.html')
+    return render(request, 'signup/thanks.html')
