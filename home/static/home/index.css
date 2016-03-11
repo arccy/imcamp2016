@@ -1,6 +1,6 @@
 body {
     font-family: "Raleway", Tahoma, Geneva, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin: 0;
     background-color: #4ba3bd;
     color: #F2F2F2;
@@ -39,7 +39,7 @@ h2 {
 
 .content {
     position: absolute;
-    margin-top: 32vh;
+    margin-top: 26vh;
     margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;

@@ -170,18 +170,20 @@
     8400 {
         top: -10%;
     }
+    /*
     9000 {
         top: -20%;
     }
     9600 {
         top: -20%;
     }
+    */
 }
 
-#page7 {
-    -skrollr-animation-name: paged7;
+#page8 {
+    -skrollr-animation-name: paged8;
 }
-@-skrollr-keyframes paged7 {
+@-skrollr-keyframes paged8 {
     7200 {
         top: 100%;
     }
@@ -191,14 +193,17 @@
     8600 {
         top: 0%;
     }
+    /*
     9000 {
         top: -10%;
     }
     9600 {
         top: -10%;
     }
+    */
+    
 }
-
+/*
 #page8 {
     -skrollr-animation-name: paged8;
 }
@@ -211,219 +216,6 @@
     }
     9600 {
         top: 0%;
-    }
-}
-/*
-#wave1 {
-    -skrollr-animation-name: waved1;
-}
-@-skrollr-keyframes waved1 {
-    0 {
-        transform: translate(-20px);
-    }
-    800 {
-        transform: translate(20px);
-    }
-    1200 {
-        transform: translate(-20px);
-    }
-    1800 {
-        transform: translate(20px);
-    }
-    2400 {
-        transform: translate(-20px);
-    }
-    3000 {
-        transform: translate(20px);
-    }
-    3600 {
-        transform: translate(-20px);
-    }
-}
-
-#wave2 {
-    -skrollr-animation-name: waved2;
-}
-@-skrollr-keyframes waved2 {
-    600 {
-        transform: translate(-20px);
-    }
-    1200 {
-        transform: translate(20px);
-    }
-    2000 {
-        transform: translate(-20px);
-    }
-    2400 {
-        transform: translate(20px);
-    }
-    3000 {
-        transform: translate(-20px);
-    }
-    3600 {
-        transform: translate(20px);
-    }
-    4200 {
-        transform: translate(-20px);
-    }
-    4800 {
-        transform: translate(20px);
-    }
-}
-
-#wave3 {
-    -skrollr-animation-name: waved3;
-}
-@-skrollr-keyframes waved3 {
-    1800 {
-        transform: translate(20px);
-    }
-    2400 {
-        transform: translate(-20px);
-    }
-    3200 {
-        transform: translate(20px);
-    }
-    3600 {
-        transform: translate(-20px);
-    }
-    4200 {
-        transform: translate(20px);
-    }
-    4800 {
-        transform: translate(-20px);
-    }
-    5400 {
-        transform: translate(20px);
-    }
-    6000 {
-        transform: translate(-20px);
-    }
-
-}
-
-#wave4 {
-    -skrollr-animation-name: waved4;
-}
-@-skrollr-keyframes waved4 {
-    3000 {
-        transform: translate(-20px);
-    }
-    3600 {
-        transform: translate(20px);
-    }
-    4400 {
-        transform: translate(-20px);
-    }
-    4800 {
-        transform: translate(20px);
-    }
-    5400 {
-        transform: translate(-20px);
-    }
-    6000 {
-        transform: translate(20px);
-    }
-    6600 {
-        transform: translate(-20px);
-    }
-    7200 {
-        transform: translate(20px);
-    }
-
-}
-
-#wave5 {
-    -skrollr-animation-name: waved5;
-}
-@-skrollr-keyframes waved5 {
-    4200 {
-        transform: translate(20px);
-    }
-    4800 {
-        transform: translate(-20px);
-    }
-    5600 {
-        transform: translate(20px);
-    }
-    6000 {
-        transform: translate(-20px);
-    }
-    6600 {
-        transform: translate(20px);
-    }
-    7200 {
-        transform: translate(-20px);
-    }
-    7800 {
-        transform: translate(20px);
-    }
-    8400 {
-        transform: translate(-20px);
-    }
-
-}
-
-#wave6 {
-    -skrollr-animation-name: waved6;
-}
-@-skrollr-keyframes waved6 {
-    5400 {
-        transform: translate(-20px);
-    }
-    6000 {
-        transform: translate(20px);
-    }
-    6800 {
-        transform: translate(-20px);
-    }
-    7200 {
-        transform: translate(20px);
-    }
-    7800 {
-        transform: translate(-20px);
-    }
-    8400 {
-        transform: translate(20px);
-    }
-    9000 {
-        transform: translate(-20px);
-    }
-}
-
-#wave7 {
-    -skrollr-animation-name: waved7;
-}
-@-skrollr-keyframes waved7 {
-    6600 {
-        transform: translate(20px);
-    }
-    7200 {
-        transform: translate(-20px);
-    }
-    8000 {
-        transform: translate(20px);
-    }
-    8400 {
-        transform: translate(-20px);
-    }
-    9000 {
-        transform: translate(20px);
-    }
-}
-
-#wave8 {
-    -skrollr-animation-name: waved8;
-}
-@-skrollr-keyframes waved8 {
-    7800 {
-        transform: translate(-20px);
-    }
-    8600 {
-        transform: translate(20px);
-    }
-    9000 {
-        transform: translate(-20px);
     }
 }
 */
