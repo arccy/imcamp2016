@@ -7,12 +7,12 @@ from django import forms
 
 # Create your models here.
 
-genders = (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
-grades = (('1', 'Year 1'), ('2', 'Year 2'), ('3', 'Year 3'), ('O', 'Other'))
+genders = (('M', '男'), ('F', '女'), ('O', '其他'))
+grades = (('1', '高一'), ('2', '高二'), ('3', '高三'), ('O', '其他 (請在自介說明'))
 sizes = (('XS', 'XS'), ('S', 'S'), ('M', 'M'), ('L','L'), ('XL', 'XL'))
 bloods = (('A', 'A'), ('B', 'B'), ('AB', 'AB'), ('O', 'O'))
-foods = (('M', 'Meat'), ('V','Veg'))
-hows = (('W', 'Webpage'), ('FB', 'Facebook'), ('F', 'Friends'), ('O', 'Other'))
+foods = (('M', '葷'), ('V','素'))
+hows = (('W', '上網搜尋'), ('FB', '臉書'), ('F', '朋友'), ('C', '班宣'), ('O', '其他'), ('D', '杜鵑花'))
     
 class SignUp(models.Model):
     name = models.CharField(max_length = 20)
@@ -64,11 +64,11 @@ class SignUpForm(ModelForm):
             'grade': ('年級'),
             'mugshot': ('大頭照'),
             'lifeshot': ('個人生活照'),
-            'interests': ('個人興趣或特質'),
+            'interests': ('自介 (個人興趣或特質)'),
             'experiences': ('特殊經歷(社團活動、工作經驗或其他特殊事蹟等,限國高中時期)'),
             'motivations': ('報名動機及期待收穫'),
             'how': ('你從何處得知臺大資管營'),
-            'group': ('申請三人團報優惠'),
+            'group': ('申請二人4800/三人4700團報優惠'),
             'special': ('申請家境清寒報名費減免'),
             'proof': ('相關證明文件'),
         }
@@ -96,7 +96,7 @@ class SignUpForm(ModelForm):
             'motivations': (''),
             'how': (''),
             'group': (''),
-            'special': (''),
+            'special': ('為協助家境清寒學生能參與本次活動，上傳相關證明文件並錄取後，得以2000元報名費參與本次活動。'),
             'proof': (''),
         }
         widgets = {
@@ -104,7 +104,7 @@ class SignUpForm(ModelForm):
             'ssn': forms.TextInput(attrs={'placeholder': 'A123456789'}),
             'phone': forms.TextInput(attrs={'placeholder': '0912345678'}),
             'email': forms.TextInput(attrs={'placeholder': 'signup@ntu.im'}),
-            'address': forms.TextInput(attrs={'placeholder': 'somewhere @ somewhere'}),
+            'address': forms.TextInput(attrs={'placeholder': '10617 臺北市羅斯福路四段一號'}),
             'contact': forms.TextInput(attrs={'placeholder': 'XXX (父親/兒子)'}),
             'contact_phone': forms.TextInput(attrs={'placeholder': '0987654321'}),
             'school': forms.TextInput(attrs={'placeholder': 'XX高中'}),
