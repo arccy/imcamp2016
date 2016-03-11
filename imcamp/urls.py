@@ -19,8 +19,8 @@ from home import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^signup/', include('signup.urls')),
-    url(r'^/', include('home.urls')),
+    url(r'^camp/2016/signup/', include('signup.urls')),
+    url(r'^camp/2016/', include('home.urls')),
     url(r'^$', include('home.urls')),
 ]
 
