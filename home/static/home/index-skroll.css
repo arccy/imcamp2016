@@ -187,28 +187,3 @@
     }
 }
 
-    /*
-    9000 {
-        top: -10%;
-    }
-    9600 {
-        top: -10%;
-    }
-    */
-
-/*
-#page8 {
-    -skrollr-animation-name: paged8;
-}
-@-skrollr-keyframes paged8 {
-    8400 {
-        top: 100%;
-    }
-    9200 {
-        top: 0%;
-    }
-    9600 {
-        top: 0%;
-    }
-}
-*/
