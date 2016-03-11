@@ -1,4 +1,4 @@
-from django.template import RequestContext
+from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
@@ -6,10 +6,10 @@ from django.http import HttpResponseRedirect
 
 from .models import SignUpForm
 
+@csrf_exempt
 def sign(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST, request.FILES)
-        context_instance=RequestContext(request)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/camp/2016/signup/thanks/')
@@ -18,7 +18,6 @@ def sign(request):
         
     else:
         form = SignUpForm()
-        context_instance=RequestContext(request)
     return render(request, 'signup/signup.html', {'form': form})
 
 def thanks(request):
