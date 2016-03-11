@@ -1,0 +1,1 @@
+web: uwsgi --module imcamp.wsgi
