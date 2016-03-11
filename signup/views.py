@@ -12,11 +12,11 @@ def sign(request):
             form.save()
             return HttpResponseRedirect('/camp/2016/signup/thanks/')
         else:
-            return render(request, '/camp/2016/signup/signup.html', {'form': form})
+            return render(request, 'signup/signup.html', {'form': form})
         
     else:
         form = SignUpForm()
-    return render(request, '/camp/2016/signup/signup.html', {'form': form})
+    return render(request, 'signup/signup.html', {'form': form})
 
 def thanks(request):
     return render(request, '/camp/2016/signup/thanks.html')
