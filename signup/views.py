@@ -10,13 +10,13 @@ def sign(request):
         form = SignUpForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/signup/thanks/')
+            return HttpResponseRedirect('/camp/2016/signup/thanks/')
         else:
-            return render(request, 'signup/signup.html', {'form': form})
+            return render(request, '/camp/2016/signup/signup.html', {'form': form})
         
     else:
         form = SignUpForm()
-    return render(request, 'signup/signup.html', {'form': form})
+    return render(request, '/camp/2016/signup/signup.html', {'form': form})
 
 def thanks(request):
-    return render(request, 'signup/thanks.html')
+    return render(request, '/camp/2016/signup/thanks.html')

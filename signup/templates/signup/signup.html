@@ -34,7 +34,7 @@
         <div class="content" id="content1">
             <img class="logo" src="/camp/2016/static/logo.png" />
             <h2>台大資管營</h2>
-            <form action="/camp/2016/signup/" enctype="multipart/form-data" method="post">
+            <form action="/camp/2016/signup" enctype="multipart/form-data" method="post">
             {% csrf_token %}
                 {{ form.non_field_errors }}
                 <div class="fieldWrapper">
