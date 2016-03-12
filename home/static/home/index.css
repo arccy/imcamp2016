@@ -9,8 +9,10 @@ body {
 img {
     vertical-align: bottom;
     max-width: 30em;
-    width: 95vw;
-    max-height: 50vmin;
+    height: 60vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
