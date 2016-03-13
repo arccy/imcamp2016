@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,800" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/camp/2016/static/favicon.png">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/camp/2016/static/signup/moment.js"></script>
     <script src="/camp/2016/static/signup/pikaday.js"></script>
 </head>
     <script>
@@ -232,9 +233,10 @@
             document.getElementById('button1').setAttribute('type', 'submit')
         }
         var picker = new Pikaday({ 
-            field: document.getElementById(''),
-            format: 'YYYY-MM-DD'
+            field: document.getElementById('id_birthday')
         });
+        picker.setDate('1999-01-01');
+        picker.toString('YYYY-MM-DD')
     </script>
 </body>
 </html>
