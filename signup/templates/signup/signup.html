@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,800" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/camp/2016/static/favicon.png">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/camp/2016/static/signup/pikaday.js"></script>
 </head>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,161 +43,161 @@
                     {% if form.name.help_text %}
                         <p class="help">{{ form.name.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.name }}</p><p></p>
+                    <p>{{ form.name }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.gender.label_tag }} <span class="errors">{{ form.gender.errors.as_text }} </span></p>
                     {% if form.gender.help_text %}
                         <p class="help">{{ form.gender.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.gender }}</p><p></p>
+                    <p>{{ form.gender }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.birthday.label_tag }} <span class="errors">{{ form.birthday.errors.as_text }} </span></p>
                     {% if form.birthday.help_text %}
                         <p class="help">{{ form.birthday.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.birthday }}</p><p></p>
+                    <p>{{ form.birthday }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.ssn.label_tag }} <span class="errors">{{ form.ssn.errors.as_text }} </span></p>
                     {% if form.ssn.help_text %}
                         <p class="help">{{ form.ssn.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.ssn }}</p><p></p>
+                    <p>{{ form.ssn }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.phone.label_tag }} <span class="errors">{{ form.phone.errors.as_text }} </span></p>
                     {% if form.phone.help_text %}
                         <p class="help">{{ form.phone.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.phone }}</p><p></p>
+                    <p>{{ form.phone }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.email.label_tag }} <span class="errors">{{ form.email.errors.as_text }} </span></p>
                     {% if form.email.help_text %}
                         <p class="help">{{ form.email.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.email }}</p><p></p>
+                    <p>{{ form.email }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.address.label_tag }} <span class="errors">{{ form.address.errors.as_text }} </span></p>
                     {% if form.address.help_text %}
                         <p class="help">{{ form.address.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.address }}</p><p></p>
+                    <p>{{ form.address }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.contact.label_tag }} <span class="errors">{{ form.contact.errors.as_text }} </span></p>
                     {% if form.contact.help_text %}
                         <p class="help">{{ form.contact.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.contact }}</p><p></p>
+                    <p>{{ form.contact }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.contact_phone.label_tag }} <span class="errors">{{ form.contact_phone.errors.as_text }} </span></p>
                     {% if form.contact_phone.help_text %}
                         <p class="help">{{ form.contact_phone.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.contact_phone }}</p><p></p>
+                    <p>{{ form.contact_phone }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.blood.label_tag }} <span class="errors">{{ form.blood.errors.as_text }} </span></p>
                     {% if form.blood.help_text %}
                         <p class="help">{{ form.blood.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.blood }}</p><p></p>
+                    <p>{{ form.blood }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.food.label_tag }} <span class="errors">{{ form.food.errors.as_text }} </span></p>
                     {% if form.food.help_text %}
                         <p class="help">{{ form.food.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.food }}</p><p></p>
+                    <p>{{ form.food }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.allergy.label_tag }} <span class="errors">{{ form.allergy.errors.as_text }} </span></p>
                     {% if form.allergy.help_text %}
                         <p class="help">{{ form.allergy.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.allergy }}</p><p></p>
+                    <p>{{ form.allergy }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.medical.label_tag }} <span class="errors">{{ form.medical.errors.as_text }} </span></p>
                     {% if form.medical.help_text %}
                         <p class="help">{{ form.medical.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.medical }}</p><p></p>
+                    <p>{{ form.medical }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.size.label_tag }} <span class="errors">{{ form.size.errors.as_text }} </span></p>
                     {% if form.size.help_text %}
                         <p class="help">{{ form.size.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.size }}</p><p></p>
+                    <p>{{ form.size }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.school.label_tag }} <span class="errors">{{ form.school.errors.as_text }} </span></p>
                     {% if form.school.help_text %}
                         <p class="help">{{ form.school.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.school }}</p><p></p>
+                    <p>{{ form.school }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.grade.label_tag }} <span class="errors">{{ form.grade.errors.as_text }} </span></p>
                     {% if form.grade.help_text %}
                         <p class="help">{{ form.grade.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.grade }}</p><p></p>
+                    <p>{{ form.grade }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.mugshot.label_tag }} <span class="errors">{{ form.mugshot.errors.as_text }} </span></p>
                     {% if form.mugshot.help_text %}
                         <p class="help">{{ form.mugshot.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.mugshot }}</p><p></p>
+                    <p>{{ form.mugshot }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.lifeshot.label_tag }} <span class="errors">{{ form.lifeshot.errors.as_text }} </span></p>
                     {% if form.lifeshot.help_text %}
                         <p class="help">{{ form.lifeshot.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.lifeshot }}</p><p></p>
+                    <p>{{ form.lifeshot }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.interests.label_tag }} <span class="errors">{{ form.interests.errors.as_text }} </span></p>
                     {% if form.interests.help_text %}
                         <p class="help">{{ form.interests.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.interests }}</p><p></p>
+                    <p>{{ form.interests }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.experiences.label_tag }} <span class="errors">{{ form.experiences.errors.as_text }} </span></p>
                     {% if form.experiences.help_text %}
                         <p class="help">{{ form.experiences.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.experiences }}</p><p></p>
+                    <p>{{ form.experiences }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.motivations.label_tag }} <span class="errors">{{ form.motivations.errors.as_text }} </span></p>
                     {% if form.motivations.help_text %}
                         <p class="help">{{ form.motivations.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.motivations }}</p><p></p>
+                    <p>{{ form.motivations }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.how.label_tag }} <span class="errors">{{ form.how.errors.as_text }} </span></p>
                     {% if form.how.help_text %}
                         <p class="help">{{ form.how.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.how }}</p><p></p>
+                    <p>{{ form.how }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <p>{{ form.group.label_tag }} <span class="errors">{{ form.group.errors.as_text }} </span></p>
                     {% if form.group.help_text %}
                         <p class="help">{{ form.group.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.group }}</p><p></p>
+                    <p>{{ form.group }}</p>
                 </div>
                 <div class="fieldWrapper">
                     <br />
@@ -204,14 +205,14 @@
                     {% if form.special.help_text %}
                         <p class="help">{{ form.special.help_text|safe }}</p>
                     {% endif %}
-                    <p></p>
+                    
                 </div>
                 <div class="fieldWrapper" id="proof">
                     <p>{{ form.proof.label_tag }} <span class="errors">{{ form.proof.errors.as_text }} </span></p>
                     {% if form.proof.help_text %}
                         <p class="help">{{ form.proof.help_text|safe }}</p>
                     {% endif %}
-                    <p>{{ form.proof }}</p><p></p>
+                    <p>{{ form.proof }}</p>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LdrgBgTAAAAAKLxOGFaGWMrEUtqbEwq2r3eoig6" data-callback="enableBtn"></div>
                 <input id="button1" type="hidden" value="ok" />
@@ -230,6 +231,10 @@
         function enableBtn() {
             document.getElementById('button1').setAttribute('type', 'submit')
         }
+        var picker = new Pikaday({ 
+            field: document.getElementById('id_birthday'),
+            format: 'YYYY-MM-DD'
+        });
     </script>
 </body>
 </html>

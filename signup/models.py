@@ -48,7 +48,7 @@ class SignUpForm(ModelForm):
         labels = {
             'name': ('姓名'),
             'gender': ('性別'),
-            'birthday': ('出生年月日 YYYY-MM-DD'),
+            'birthday': ('出生年月日'),
             'ssn': ('身份證字號'),
             'phone': ('聯絡電話'),
             'email': ('常用email'),
