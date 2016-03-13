@@ -2,3 +2,6 @@ venv/
 __pycache__/
 signup/migrations/
 /static/
+db.sqlite3
+uploads/
+
