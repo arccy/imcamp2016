@@ -16,6 +16,7 @@ input {
     border-right: 0;
     border-bottom: 2px solid #E0E0E0;
     background: transparent;
+    color: #F2F2F2;
 }
 
 input[type="file"] {
