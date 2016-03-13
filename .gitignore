@@ -1,4 +1,5 @@
 venv/
+static/
 imcamp/__pycache__/
 home/__pycache__/
 signup/__pycache__
