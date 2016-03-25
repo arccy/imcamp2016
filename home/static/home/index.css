@@ -11,8 +11,10 @@ img {
     max-width: 30em;
     height: 40vh;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
 }
 
 h2 {
