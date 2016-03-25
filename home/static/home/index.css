@@ -128,3 +128,7 @@ a {
     text-align: center;
 }
 
+#arrow {
+    width: 10em;
+    height: auto;
+}
