@@ -34,10 +34,12 @@
 <body>
     <div class="view">
         <div class="content" id="content1">
-            <img class="logo" src="/camp/2016/static/logo.png" />
-            <h2>台大資管營</h2>
+            <a href="https://ntu.im/camp/2016/">
+                <img class="logo" src="/camp/2016/static/logo.png" />
+                <h2>台大資管營</h2>
+            </a>
             <p>自介、動機...等將是錄取關鍵，請好好準備，讓我們看見最特別的你/妳吧!!</p>
-
+            <p>FB 粉專<a href="https://www.facebook.com/ntuimcamp2016/">請點我</a></p>
             <p>報名截止(2016/5/10)後將會公布正取/備取名單，繳費通知、相關資訊也將一併寄出。</p>
             <form action="/camp/2016/signup" enctype="multipart/form-data" method="post">
             {% csrf_token %}
