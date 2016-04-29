@@ -28,7 +28,7 @@ class SignUp(models.Model):
     food = models.CharField(choices = foods, max_length = 10)
     allergy = models.CharField(max_length = 100, blank = True)
     medical = models.CharField(max_length = 100, blank = True)
-    size = models.CharField(choices = sizes, max_length = 10)
+    size = models.CharField(choices = sizes, max_length = 9)
     school = models.CharField(max_length = 20)
     grade = models.CharField(choices = grades, max_length = 10)
     mugshot = models.ImageField(upload_to='uploads/mugshot/')
