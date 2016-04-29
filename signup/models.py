@@ -16,7 +16,7 @@ hows = (('W', '上網搜尋'), ('FB', '臉書'), ('F', '朋友'), ('C', '班宣'
     
 class SignUp(models.Model):
     name = models.CharField(max_length = 20)
-    gender = models.CharField(choices = genders, max_length = 10)
+    gender = models.CharField(choices = genders, max_length = 1)
     birthday = models.DateField()
     ssn = models.CharField(max_length = 10)
     phone = models.CharField(max_length = 10)
@@ -59,7 +59,7 @@ class SignUpForm(ModelForm):
             'food': ('是否吃素'),
             'allergy': ('特殊飲食需求'),
             'medical': ('特殊疾病'),
-            'size': ('營服尺寸(XS,S,M,L,XL,2L)'),
+            'size': ('營服尺寸(XS,S,M,L,XL)'),
             'school': ('就讀學校'),
             'grade': ('年級'),
             'mugshot': ('大頭照'),
