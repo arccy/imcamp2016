@@ -23,6 +23,5 @@ def sign(request):
 def thanks(request):
     return render(request, 'signup/thanks.html')
 
-def sizes(request):
-    image_data = open('/camp/2016/static/signup/sizes.jpg','rb').read()
-    return HttpResponse(image_data, conetent="image/jpg")
+def size(request):
+    return render(request, 'signup/size.html')
