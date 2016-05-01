@@ -90,6 +90,17 @@ a {
     fill: #FAF5B3;
 }
 
+#content6 {
+    max-width: 60em;
+}
+
+#company {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
 #views {
     box-sizing: border-box;
     height: 100%;
