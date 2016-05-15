@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <title>2016 IMCamp Signup</title>
+    <meta property="og:site_name" content="2016 IMCamp"/>
+    <meta property="og:title" content="2016 IMCamp | Signup"/>
+    <meta property="og:description" content="2016 臺大資訊管理營 帶領你認識資訊管理這一門跨領域的學問 在台大渡過2016的夏天"/>
+    <meta property="og:image" content="http://ntu.im/camp/2016/static/logo.png">
+    <meta property="og:url" content="http://ntu.im/camp/2016">
+    <meta property="og:type" content="event"/>
+    <meta name="description" content="2016 臺大資訊管理營 帶領你認識資訊管理這一門跨領域的學問 在台大渡過2016的夏天">
+    <meta name="keywords" content="imcamp, ntu, ntu imcamp, imcamp 2016, 臺大, 台大, 資管, 資訊管理, 資管營, 資訊管理營, 台大資管營, 臺大資管營, 2016">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/camp/2016/static/signup/signup.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,800" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/camp/2016/static/favicon.png">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/camp/2016/static/signup/moment.js"></script>
+    <script src="/camp/2016/static/signup/pikaday.js"></script>
+</head>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47570930-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+<body>
+    <div class="view">
+        <div class="content" id="content1">
+            <a href="https://ntu.im/camp/2016/">
+                <img class="logo" src="/camp/2016/static/logo.png" />
+                <h2>台大資管營</h2>
+            </a>
+            <p>自介、動機...等將是錄取關鍵，請好好準備，讓我們看見最特別的你/妳吧!!</p>
+            <p>FB 粉專<a href="https://www.facebook.com/ntuimcamp2016/">請點我</a></p>
+            <p>報名截止(2016/5/15)後將會公布正取/備取名單，繳費通知、相關資訊也將一併寄出。</p>
+            <form action="/camp/2016/signup" enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="fieldWrapper">
+                    <p>{{ form.name.label_tag }} <span class="errors">{{ form.name.errors.as_text }} </span></p>
+                    {% if form.name.help_text %}
+                        <p class="help">{{ form.name.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.name }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.gender.label_tag }} <span class="errors">{{ form.gender.errors.as_text }} </span></p>
+                    {% if form.gender.help_text %}
+                        <p class="help">{{ form.gender.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.gender }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.birthday.label_tag }} <span class="errors">{{ form.birthday.errors.as_text }} </span></p>
+                    {% if form.birthday.help_text %}
+                        <p class="help">{{ form.birthday.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.birthday }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.ssn.label_tag }} <span class="errors">{{ form.ssn.errors.as_text }} </span></p>
+                    {% if form.ssn.help_text %}
+                        <p class="help">{{ form.ssn.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.ssn }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.phone.label_tag }} <span class="errors">{{ form.phone.errors.as_text }} </span></p>
+                    {% if form.phone.help_text %}
+                        <p class="help">{{ form.phone.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.phone }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.email.label_tag }} <span class="errors">{{ form.email.errors.as_text }} </span></p>
+                    {% if form.email.help_text %}
+                        <p class="help">{{ form.email.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.email }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.address.label_tag }} <span class="errors">{{ form.address.errors.as_text }} </span></p>
+                    {% if form.address.help_text %}
+                        <p class="help">{{ form.address.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.address }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.contact.label_tag }} <span class="errors">{{ form.contact.errors.as_text }} </span></p>
+                    {% if form.contact.help_text %}
+                        <p class="help">{{ form.contact.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.contact }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.contact_phone.label_tag }} <span class="errors">{{ form.contact_phone.errors.as_text }} </span></p>
+                    {% if form.contact_phone.help_text %}
+                        <p class="help">{{ form.contact_phone.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.contact_phone }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.blood.label_tag }} <span class="errors">{{ form.blood.errors.as_text }} </span></p>
+                    {% if form.blood.help_text %}
+                        <p class="help">{{ form.blood.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.blood }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.food.label_tag }} <span class="errors">{{ form.food.errors.as_text }} </span></p>
+                    {% if form.food.help_text %}
+                        <p class="help">{{ form.food.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.food }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.allergy.label_tag }} <span class="errors">{{ form.allergy.errors.as_text }} </span></p>
+                    {% if form.allergy.help_text %}
+                        <p class="help">{{ form.allergy.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.allergy }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.medical.label_tag }} <span class="errors">{{ form.medical.errors.as_text }} </span></p>
+                    {% if form.medical.help_text %}
+                        <p class="help">{{ form.medical.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.medical }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.size.label_tag }} <span class="errors">{{ form.size.errors.as_text }} </span></p>
+                    <p><a href="/camp/2016/signup/size">shirt sizes</a></p>
+                    {% if form.size.help_text %}
+                        <p class="help">{{ form.size.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.size }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.school.label_tag }} <span class="errors">{{ form.school.errors.as_text }} </span></p>
+                    {% if form.school.help_text %}
+                        <p class="help">{{ form.school.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.school }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.grade.label_tag }} <span class="errors">{{ form.grade.errors.as_text }} </span></p>
+                    {% if form.grade.help_text %}
+                        <p class="help">{{ form.grade.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.grade }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.mugshot.label_tag }} <span class="errors">{{ form.mugshot.errors.as_text }} </span></p>
+                    {% if form.mugshot.help_text %}
+                        <p class="help">{{ form.mugshot.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.mugshot }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.lifeshot.label_tag }} <span class="errors">{{ form.lifeshot.errors.as_text }} </span></p>
+                    {% if form.lifeshot.help_text %}
+                        <p class="help">{{ form.lifeshot.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.lifeshot }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.interests.label_tag }} <span class="errors">{{ form.interests.errors.as_text }} </span></p>
+                    {% if form.interests.help_text %}
+                        <p class="help">{{ form.interests.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.interests }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.experiences.label_tag }} <span class="errors">{{ form.experiences.errors.as_text }} </span></p>
+                    {% if form.experiences.help_text %}
+                        <p class="help">{{ form.experiences.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.experiences }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.motivations.label_tag }} <span class="errors">{{ form.motivations.errors.as_text }} </span></p>
+                    {% if form.motivations.help_text %}
+                        <p class="help">{{ form.motivations.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.motivations }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.how.label_tag }} <span class="errors">{{ form.how.errors.as_text }} </span></p>
+                    {% if form.how.help_text %}
+                        <p class="help">{{ form.how.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.how }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <p>{{ form.group.label_tag }} <span class="errors">{{ form.group.errors.as_text }} </span></p>
+                    {% if form.group.help_text %}
+                        <p class="help">{{ form.group.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.group }}</p>
+                </div>
+                <div class="fieldWrapper">
+                    <br />
+                    <p>{{ form.special.label_tag }} {{ form.special }} <span class="errors">{{ form.special.errors.as_text }} </span></p>
+                    {% if form.special.help_text %}
+                        <p class="help">{{ form.special.help_text|safe }}</p>
+                    {% endif %}
+                    
+                </div>
+                <div class="fieldWrapper" id="proof">
+                    <p>{{ form.proof.label_tag }} <span class="errors">{{ form.proof.errors.as_text }} </span></p>
+                    {% if form.proof.help_text %}
+                        <p class="help">{{ form.proof.help_text|safe }}</p>
+                    {% endif %}
+                    <p>{{ form.proof }}</p>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LdrgBgTAAAAAKLxOGFaGWMrEUtqbEwq2r3eoig6" data-callback="enableBtn"></div>
+                <input id="button1" type="hidden" value="ok" />
+            </form>
+        </div>
+    </div>
+    
+    <script>  
+        document.getElementById('id_special').onclick = function() {
+            if(this.checked == true){
+                document.getElementById('proof').style.display = 'block';
+            }else{
+                document.getElementById('proof').style.display = 'none';
+            }
+        };
+        function enableBtn() {
+            document.getElementById('button1').setAttribute('type', 'submit')
+        }
+        var picker = new Pikaday({ 
+            field: document.getElementById('id_birthday')
+        });
+        picker.setDate('1999-01-01');
+        picker.toString('YYYY-MM-DD')
+    </script>
+</body>
+</html>
