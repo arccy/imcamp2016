@@ -1,0 +1,186 @@
+#page1 {
+    -skrollr-animation-name: paged1;
+}
+@-skrollr-keyframes paged1 {
+    0 {
+        top: 100%;
+    }
+    600 {
+        top: 0%;
+    }
+    1400 {
+        top: 0%;
+    }
+    1800 {
+        top: -10%;
+    }
+    2400 {
+        top: -10%;
+    }
+    3000 {
+        top: -20%;
+    }
+    3600 {
+        top: -20%;
+    }
+    4200 {
+        top: -30%;
+    }
+}
+
+#page2 {
+    -skrollr-animation-name: paged2;
+}
+@-skrollr-keyframes paged2 {
+    1200 {
+        top: 100%;
+    }
+    1800 {
+        top: 0%;
+    }
+    2600 {
+        top: 0%;
+    }
+    3000 {
+        top: -10%;
+    }
+    3600 {
+        top: -10%;
+    }
+    4200 {
+        top: -20%;
+    }
+    4800 {
+        top: -20%;
+    }
+    5400 {
+        top: -30%;
+    }
+}
+
+#page3 {
+    -skrollr-animation-name: paged3;
+}
+@-skrollr-keyframes paged3 {
+    2400 {
+        top: 100%;
+    }
+    3000 {
+        top: 0%;
+    }
+    3800 {
+        top: 0%;
+    }
+    4200 {
+        top: -10%;
+    }
+    4800 {
+        top: -10%;
+    }
+    5400 {
+        top: -20%;
+    }
+    6000 {
+        top: -20%;
+    }
+    6600 {
+        top: -30%;
+    }
+
+}
+
+#page4 {
+    -skrollr-animation-name: paged4;
+}
+@-skrollr-keyframes paged4 {
+    3600 {
+        top: 100%;
+    }
+    4200 {
+        top: 0%;
+    }
+    5000 {
+        top: 0%;
+    }
+    5400 {
+        top: -10%;
+    }
+    6000 {
+        top: -10%;
+    }
+    6600 {
+        top: -20%;
+    }
+    7200 {
+        top: -20%;
+    }
+    7800 {
+        top: -30%;
+    }
+
+}
+
+#page5 {
+    -skrollr-animation-name: paged5;
+}
+@-skrollr-keyframes paged5 {
+    4800 {
+        top: 100%;
+    }
+    5400 {
+        top: 0%;
+    }
+    6200 {
+        top: 0%;
+    }
+    6600 {
+        top: -10%;
+    }
+    7200 {
+        top: -10%;
+    }
+    7800 {
+        top: -20%;
+    }
+    8400 {
+        top: -20%;
+    }
+
+}
+
+#page6 {
+    -skrollr-animation-name: paged6;
+}
+@-skrollr-keyframes paged6 {
+    6000 {
+        top: 100%;
+    }
+    6600 {
+        top: 0%;
+    }
+    7400 {
+        top: 0%;
+    }
+    7800 {
+        top: -10%;
+    }
+    8400 {
+        top: -10%;
+    }
+}
+
+#page8 {
+    -skrollr-animation-name: paged8;
+}
+@-skrollr-keyframes paged8 {
+    7200 {
+        top: 100%;
+    }
+    7800 {
+        top: 0%;
+    }
+    8600 {
+        top: 0%;
+    }
+}
+
