@@ -1,6 +1,8 @@
 # Summer 2016 NTU IMCamp Site
 
-**This site has been retired and now only shows static pages**
+_Unmaintained_
+
+_This project is no longer in use and the [site](https://ntu.im/camp/2016/) now only serves the static pages_
 
 This is the promotional/signup site for NTU IM's 2016 Summer Camp
 
